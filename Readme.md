@@ -31,9 +31,9 @@ A lo largo del Bikram nos referiremos como objetos a los objetos JSON {propiedad
 
 - [ ] 7.- Crea una **función aplicar__nuevoGusto** que añada a **rockero el gustoMusical "My Chemical Romance"**  Que no te despiste que se pida una función, solo es para poder pasar el test, **aprovecha el método nuevoGusto**
 
-- [ ] 8.- Crea un **array Perro** que contenga los **valores: [nombre, raza, función popo {devuelve ("Ha hecho" + Math.random() * 3 + "caquitas")}]**
+- [ ] 8.- Crea un **array Perro** que contenga los **valores: [nombre, raza, función popo {devuelve ("Ha hecho " + Math.random() * 3 + " caquitas")}]**
 
-- [ ] 9.- Crea el **objeto Perrito** con las **propiedades: nombre, raza** y el **método popo {devuelve ("Ha hecho " + Math.random() * 3 + "caquitas")}**
+- [ ] 9.- Crea el **objeto Perrito** con las **propiedades: nombre, raza** y el **método popo {devuelve ("Ha hecho " + Math.random() * 3 + " caquitas")}**
 
 - [ ] 10.- Crea la **clase Perrazo** con las **propiedades: nombre, raza** y el **método popo {devuelve ("Ha hecho " + Math.random() * 3 + " caquitas")}**
 
