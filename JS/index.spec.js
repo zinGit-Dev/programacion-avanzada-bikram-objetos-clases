@@ -503,7 +503,7 @@ describe(`Nivel premium`, () => {
         });
     });
 
-    describe(`25.- Crea la clase Humano con las propiedades: nombre y nacimiento además, deberá tener un getter edad {imprime por consola new Date().getFullYear() - nacimiento} y un setter edad(nuevaEdad) {cambiará la edad por nuevaEdad}`, () => {
+    describe(`25.- Crea la clase Humano con las propiedades: nombre y nacimiento además, deberá tener un getter edad {devuelve new Date().getFullYear() - nacimiento} y un setter edad(nuevaEdad) {cambiará la edad por nuevaEdad}`, () => {
         let prop1 = randomString();
         let prop2 = new Date("4 may 2001");
         let a = new Humano(prop1, prop2);
