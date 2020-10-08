@@ -73,6 +73,6 @@ El nivel premium requerirá investigar sobre los requisitos
 
 - [ ] 24.- Crea la **clase ColeccionLibros** con la **propiedad array libros** y el **getter ultimaAdquisicion {devuelve el último elemento de this.libros}**
 
-- [ ] 25.- Crea la **clase Humano** con las **propiedades: nombre y nacimiento** además, deberá tener un **getter edad {devuelva new Date().getFullYear() - nacimiento}** y un **setter edad(nuevaEdad) {cambiará nacimineto por Date().getFullYear() - nuevaEdad}**
+- [ ] 25.- Crea la **clase Humano** con las **propiedades: nombre y nacimiento** además, deberá tener un **getter edad {devuelva new Date().getFullYear() - nacimiento}** y un **setter edad(nuevaEdad) {cambiará nacimineto por new Date().getFullYear() - nuevaEdad}**
 
 - [ ] 26.- Crea la **clase Horno** con las **propiedades: horaInicio (instancia de Tiempo(horas, minutos) ya declarado en JS/functions.js)** y **horaFin (instancia de Tiempo(horas, minutos))**, el **getter tiempoPasado {devolverá ("Llevamos " + TiempoAString(new Tiempo(horaActual - horaInicio, minutoActual - minutoInicio)))** y el **getter tiempoRestante {devolverá ("Quedan " + TiempoAString(new Tiempo(horaFin - horaActual, minutoFin - minutoActual)))** }
