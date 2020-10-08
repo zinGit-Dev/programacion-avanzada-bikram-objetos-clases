@@ -399,7 +399,7 @@ describe("Nivel intermedio", () => {
 });
 
 describe(`Nivel premium`, () => {
-    describe(`20.- Crea el objeto Nevera con las propiedades: productos y el getter numProducos {devuelve la suma del número de productos}`, () => {
+    describe(`20.- Crea el objeto Nevera con las propiedades: productos y el getter numProductos {devuelve la suma del número de productos}`, () => {
         let a = Nevera;
         it("Es un objeto", () => {
             expect(isClass(a)).toBeFalsy();
