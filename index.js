@@ -1,3 +1,7 @@
+
+// 1.- Crea el objeto Coche con las siguientes propiedades: marca, modelo y matricula y los métodos: acelerar {imprimirá por consola "a todo gas"} 
+// y frenar {imprimirá por consola "cuidado con la abuelita en el paso de cebra"}
+
 const Coche = {
     marca: "volvo",
     modelo: "S40",
@@ -13,6 +17,9 @@ const Coche = {
     }
     
   };
+//   2.- Crea la clase Turismo con las siguientes propiedades: marca, modelo y matricula declaradas en el constructor 
+//   y los métodos: acelerar {imprimirá por consola "a todo gas"} 
+//   y frenar {imprimirá por consola "cuidado con la abuelita en el paso de cebra"}
 
   class Turismo {
     constructor(marca,modelo,matricula){
@@ -62,6 +69,8 @@ const Coche = {
       return "Ha hecho "+ Math.random() * 3 + " caquitas"
     }
     ];
+
+    // 9.- Crea el objeto Perrito con las propiedades: nombre, raza y el método popo {devuelve ("Ha hecho " + Math.random() * 3 + " caquitas")}
 
     const Perrito = {
         nombre:"nombre",
@@ -136,11 +145,11 @@ const Coche = {
             }
             moverse(x,y){
                 
-                posicion.x += velocidad.x * direccion.x
-                posicion.y += velocidad.y * direccion.y
+                this.posicion.x += this.velocidad.x * this.direccion.x
+                this.posicion.y += this.velocidad.y * this.direccion.y
             }
             perderVida(){
-                vida -= 1
+                this.vida -= 1
             }
         }
 
@@ -151,11 +160,67 @@ const Coche = {
         // 17.- Crea el objeto FrameworksJavaScript con la propiedad: array frameworks y
         //  el método: generarFramework {añade al array frameworksJavaScript el string (randomString() + ".js")}
 
+       
         const FrameworksJavaScript = {
             frameworks: [],
-
-            generalFramework: function(){
-                const frameworksJavaScript =[]
-                 frameworksJavaScript.push(randomString() + ".js");
+            generarFramework(framework) {
+              this.frameworks.push(`${randomString()}.js`)
             }
-        };
+          }
+        // 18.- Crea la clase Error_ con las propiedades: codigo, descripcion, nombre y 
+        // el método: imprimirError {se imprime a si mismo (this) por pantalla}
+
+        class Error_ {
+            constructor(codigo,descripcion,nombre){
+                this.codigo = codigo
+                this.descripcion = descripcion
+                this.nombre= nombre
+            }
+            imprimirError(){
+               console.log(this)
+            } 
+        }
+
+     
+
+            // 19.- Crea la clase Huevera con las propiedades: huevosMaximos, huevos 
+            // y el método comprarHuevos {acepta como argumento un número y añade ese número de huevos}
+
+            class Huevera {
+                constructor(huevosMaximos, huevos){
+                    this.huevosMaximos=huevosMaximos
+                    this.huevos=huevos
+                }
+                comprarHuevos(a){
+                  this.huevos= a+this.huevos
+                }
+            }
+            // 20.- Crea el objeto Nevera con las propiedades: array productos 
+            // y el getter numProductos {devuelve la suma del número de productos}
+
+            // const Nevera = {
+            //     productos: [],
+                
+            //      get numProductos(){
+            //         return this.productos.lenght
+            //     }
+            //     };
+                const Nevera = {
+                    productos: [],
+                    
+                     get numProductos(){
+                        return sum(this.productos)
+                    }
+                    };
+
+                // 21.- Crea el objeto Congelador con las propiedades: array productos 
+                // y el setter compra {acepta un array como argumento y añade cada elemento a this.productos}
+
+                const Congelador ={
+                    productos: [],
+                    set compra(value){
+                        this.productos=value
+                    }
+                }
+                // 22.- Crea el objeto Pecera con las propiedades: array peces y el getter numPeces {retorna el número de peces}
+                //  y el setter nuevosPeces {acepta como argumento un array y añade cada elemento a this.peces}
